@@ -9,6 +9,8 @@
 \usepackage[portuguese]{babel}
 \usepackage[utf8]{inputenc}
 
+\usepackage{amsmath}
+
 %Espaçamento duplo
 \linespread{1.6}
 
@@ -241,42 +243,461 @@
 
     \section{Contra a estupidez...}
     
-      A história começa com um estranho acontecimento, quando
-      cientistas descobrem que uma amostra de Tungstênio-186 foi trocada
-      por outra de Plutônio-186. Acontece que o Plutônio-186 não é estável e
-      nem mesmo possível, segundo as leis da física conhecidas, e por isso, em
-      pouco tempo o elemento perde a sua estabilidade e começa a liberar
-      radiação. O radioquímico Frederick Hallam cria a teoria de que este
-      elemento teria vindo de um outro universo, onde as leis da física
-      pudessem aceitar a existência do mesmo. O elemento ao chegar ao
-      nosso universo seria capaz de se manter estável, por trazer parte de seu
-      verdadeiro universo, mas com o tempo, o nosso universo conseguia
-      fazer valer suas leis sobre ele e o Plutônio-186 se desestabilizava.
-      
-      Através das experiências de trocas dos elementos, os cientistas
-      recebem placas enviadas por seres deste ”outro universo” (Para-
-      Universo), onde eles descreviam como criar uma máquina que faria a
-      troca de elementos dos dois lados, recebendo a Terra o Plutônio-186, e
-      enviando para eles o Tungstênio-186 (assim como Plutônio-186 em
-      nosso mundo, o Tungstênio-186 seria instável e radioativo no Para-
-      Universo). Esta máquina (chamada de ”Bomba Eletrônica”) seria capaz
-      assim de criar energia radioativa cíclica e infinita, para os dois lados.
-      
-      O cientista Benjamin Allan Denison chega à conclusão de que tal
-      bomba traria a ruína ao nosso universo. Com a troca constante de ”leis”
-      entre os dois universos, suas regras se misturariam e tudo que faz o
-      nosso universo funcionar se desestabilizaria aos poucos. Isto foi previsto
-      pelo Dr. Hallam, mas num prazo de bilhões de anos. De acordo com
-      Denison, isso podia acontecer em menos de cem anos.
-      
-      Investigando os fatos e indivíduos envolvidos em torno da criação da
-      Bomba Eletrônica, o jovem Dr. Peter Lamont chega a conclusão de que
-      esta poderia significar a aniquilação do Universo. Ele passa a investigar
-      a tradução das placas enviadas pelos seres do Para-Universo com a ajuda
-      de um perito linguístico, Dr. Myron Bronowski. A situação complica-se
-      quando começam a surgir placas com mensagens de que a Bomba seria
-      perigosa, ao mesmo tempo em que os esforços de Lamont em provar
-      sua teoria da possível destruição não são reconhecidos.
+	O livro, curiosamente, começa no capítulo 6. Asimov optou por não começar no capítulo 1, pois ele vai apresentando os personagens da trama atual, o doutor Peter Lamont e o linguista Myron Bronowski, 
+	ao mesmo tempo que ele faz um flashback sobre a criação da Bomba de Elétrons. Asimov faz isso da forma que, os primeiros capítulos falam sobre Frederick 
+	Hallam e a descoberta/criação da Bomba de Elétrons, e são intercalados por fragmentos do capítulo 6, onde Lamont e Bronowski estão discutindo uma reunião de Lamont com Hallam.
+	
+	A primeira parte do livro fala do conflito de Lamont e Hallam, que deu início quando Lamont entrevista Hallam com intuíto de escrever a história da criação da Bomba de Elétrons. 
+	Esse conflito resultou na pesquisa de Lamont sobre o efeito colateral da Bomba de Elétrons que causaria a destruição do sistema solar. 
+	Entretanto, Hallam destruiu sua credibilidade e as hipóteses levantadas por Lamont não foram aceitas, e embora estivesse correto, nada pode fazer para impedir a destruição da Terra. 
+	Essa parte do livro também foca na criação e funcionamento da Bomba de Elétrons e nos primeiros conceitos de física para-teórica.
+
+	\subsection {Capítulo 6}
+
+	  O capítulo 6 começa com uma diálogo entre Lamont e Bronowski. 
+	  Lamont conta para Bronowski que a entrevista que ele acabou de ter com Hallam foi um fiasco maior do que a primeira. 
+	  Bronowski comenta que Lamont já esperava esse resultado, conforme ele mesmo havia dito anteriormente. 
+	  Lamont então segue dizendo que ele depende agora do trabalho de Bronowski, que responde dizendo que seu trabalho de enteder os para-homens é difícil, 
+	  já que é um povo mais inteligente que os seres humanos, e que as vezes se pergunta se é mesmo possível inteligencias diferentes se comunicarem de alguma forma. 
+	  Lamont diz que sente isso quando está explicando alguma coisa para Hallam, menosprezando a capacidade de entendimento dele.
+
+	\subsection{Capítulo 1}
+
+	  O capítulo 1 começa contando a história da criação da Bomba de Elétrons. Isso se passa 30 anos antes dos eventes atuais, quando o Frederick Hallam era um radioquímico recém graduado como doutor. 
+	  O livro apresenta então a primeira evidência da Bomba de Elétrons, o frasco tungstênio que se encontrava na mesa de Hallam. Esse frasco não era dele, ela foi deixada por um antigo empregado e 
+	  não tinha mais uso para ninguém. 
+	  
+	  No dia 3 de Outubro de 2070, Hallam chega no trabalho e nota que seu frasco de tungstênio havia sido alterado. Ele não tinha nenhum uso para o tungstênio, mas odiava que mexessem em sua mesa.
+	  Ele acusa Denison, que nega e disparava: ``Como você saberia?``, dando a entender que Hallam não tinha inteligência o suficiente para identificar uma diferença no frasco. Denison era 
+	  tão novo quanto Hallam, e era a estrela do departamento. Hallam, enfurecido, estava determinado a provar que o conteúdo não era tungstênio.
+	  
+	  Hallam levou o frasco para o departamento do espectrômetro de massa, a fim de descobrir qual era aquela substância. Sendo um radioquímico, Hallam conhecia as pessoas daquele departamento, e ele era 
+	  insistente. Após os testes, confirmou-se que o conteúdo do frasco não era tungstênio. Entretanto, também não sabiam o que era, pois a razão carga-massa estava muito alta. 
+	  Isso não foi o suficiente para Hallam, pois não bastava identificar que o frasco foi alterado, ele precisava saber o que era. Hallam mandou o técnico descobrir a carga nuclear da substância desconhecida.
+	  
+	  Alguns dias depois, o técnico voltou a sala de Hallam, dizendo que encontrou a carga nuclear da substância, mas estava errada. O resultado era que a substância era Plutônio-186. 
+	  Este isótopo de Plutônio é impossível de existir, com 94 prótons e 92 neutrôns. Então Hallam pensou, o tungstênio que foi trocado era tungstênio-186, com 74 prótons e 112 neutrôns. 
+	  Ele cogitou a possibilidade de alguma coisa ter transformado 20 neutrôns em 20 prótons. Para adicionar ainda mais incerteza no resultado obtido, a substância era estável. 
+	  Esse resultado também não era satisfatório para Hallam, pois plutônio-186 é um elemento impossível.
+	  
+	  Duas semanas depois, Hallam descobre que o elemento estava radioativo. Nesse momento, ele já dedicava todo seu foco para resolver esse mistério, deixando de lado projetos mais importantes que ele 
+	  tinha para fazer. 
+	  
+	  Hallam entra em contato com G. C. Kantrowitsch, que estava em seu último ano de uma carreira brilhante. Sua ajuda era difícil de conseguir, mas uma vez que obtida, o projeto 
+	  avançava com grande velocidade. Dois dias depois, Kantrowitsch foi a sala de Hallam, visivelmente animado, informar que o elemento estava emitindo pósitrons, os mais energéticos pósitrons que 
+	  ele já havia visto, e que a radioatividade do elemento estava aumentando a cada medida que ele fazia.
+
+	\subsection{Capitulo 6 (continuação)}
+
+	  Lamont explica para Bronowski que ele já considerou Hallam um grande homem, mas hoje ele o vê como um vilão, que reescreveu a história da Bomba de Elétrons para seu ganho. 
+	  Lamont o descreve como um pigmeu com um único talento, de convencer as pessoas que ele é um gigante.
+
+	\subsection{Capítulo 2}
+
+	  Lamont tinha 2 anos de idade quando Hallam desconfiou do tungstênio alterado pela primeira vez. Quando ele tinha 25 anos de idade, se juntou a Primeira Estação de Bombeamento, 
+	  logo depois que ele se tornou doutor em Física. Foi uma grande conquista para uma pessoa tão jovem. Ele foi empregado para lidar com problemas da mais alta abstração teórica, 
+	  e ainda assim ele se viu fascinado pela história do desenvolvimento da Bomba de Elétrons. Ela nunca havia sido escrita por alguém que entendesse completamente os princípios 
+	  teóricos da Bomba, e que tivesse também alguma habilidade em transcrever as complexidades para o público geral.
+	  
+	  Ele começou com alguns artigos que o próprio Hallam havia escrito, indo até os artigos que levavam para o público a frase que mudou o mundo, geralmente conhecida como a Grande Descoberta. 
+	  Procurando mais a fundo, Lamont começa a se perguntar se o autor da Grande Descoberta realmente foi Hallam. Ela foi anunciada em um seminário que marca o verdadeiro começo da 
+	  Bomba de Eletróns, e era extremamente difícil conseguir os detalhes desse seminário, mais difícil ainda conseguir as gravações de voz. 
+	  
+	  Havia uma chance razoável que John F. X. McFarland disse algo muito próximo da famosa frase de Hallam, além de ter dito isso antes dele. 
+	  Lamont entrevistou McFarland, que fazia pesquisas com ventos solares e os efeitos do bombeamento. McFarland claramente evitou cair no esquecimento, como ocorreu com Denison. 
+	  Conversando com McFarland, ele diz que ele escolheu não se lembrar do que disse, porque isso não importava. Nas suas palavras: “Suponha que eu reinvindique que eu tenha digo algo nas linhas 
+	  da Grande Descoberta. Ninguém iria acreditar. Eu pareceria um idiota, e um idiota megalomaniaco”. Ele diz ainda que Hallam merece o crédito, mesmo que não merecesse, pois ele foi 
+	  quem fez todos investigarem.
+	  
+	  Dois meses depois, Kantrowitsch anunciou ao mundo a existência do plutônio-186. Com isso, o tungstênio de Hallam assumiu uma escala épica. 
+	  Um seminário foi organizado, presidido por Kantrowitsch, para discutir o “problema” do plutônio-186. Esse foi o único seminário presidido por Kantrowitsch, 
+	  que morreu cinco meses depois,  sendo todos os outros presididos por Hallam. 
+	  
+	  A reunião não apresentou resultados até que Hallam anunciou a Grande Descoberta, mas na versão de Lamont, o real divisor de águas acontenceu durante um almoço. 
+	  Nesse momento, McFarland sugere umas hipóteses para colegas em sua mesa, que formaram os conceitos básicos da Grande Descoberta. Embora não seja possível provar, 
+	  Lamont suspeita que Hallam estava próximo, e ouvindo o comentário de McFarland. Entretanto, mesmo que fosse provado que a Grande Descoberta foi dita por McFaland, 
+	  seria argumentado que Hallam foi o único que levou a teoria a sério. 
+	  
+	  A Grande Descoberta, de acordo com os registros oficiais, foi: 
+	
+	  \begin{quotation}
+	    Senhores, não estamos chegando a lugar nenhum. Então, eu farei uma sugestão, não porque necessariamente faz sentido, mas porque é menos sem-sentido que todas as outras coisas que já ouvi... 
+	    Nós estamos diante de uma substância, plutônio-186, que não pode existir, muito menos ser momentaneamente estável, se as leis naturais do nosso Universo tem alguma validade. 
+	    Segue que, então, uma vez que essa substância indubtavelmente existe, e exite como uma substância que começa estável, ela deve ter existido, pelo menos durante seu começo de vida, 
+	    em um lugar ou em um tempo ou em condições que as leis naturais do Universo são diferentes das que são. Colocando sem rodeios, a substância que estamos estudando não foi gerada no nosso Universo, 
+	    mas em outro - um Universo alternativo – um Universo Paralelo. Chamem como quiserem. 
+	    
+	    Uma vez aqui – eu não vou fingir que sei como ele atravessou – ele estava estável e eu sugiro que isso foi porque ele trouxe as leis do seu próprio Universo. O fato que se 
+	    torna mais radioativo pode significar que as leis do nosso próprio Universo permearam lentamente a substância, se vocês me entendem. 
+	    
+	    Eu aponto que no mesmo tempo que plutônio-186 apareceu, uma 
+	    amostra de tungstênio, feito de vários isótopos estáveis, incluindo tungstênio-186, desapareceu. Ela pode ter escorregado para o Universo paralelo. Afinal, é lógico supor que é mais simples 
+	    um troca de massa acontecer do que uma transferência em um único sentido. No Universo paralelo, tungstênio-186 pode ser tão anômalo quanto plutônio-186 é aqui. Pode começar como uma 
+	    substância estável, e lentamente aumentando em radioatividade. Pode servir como uma fonte energética lá assim como plutônio-186 poderia servir aqui.” 
+	  \end{quotation}  
+	    	  
+	  %TODO: continuar redução do resumo
+	  Hallam disse que acreditava que a substância foi enviada por seres do do Universo paralelo, e que : “Sim, eu acredito nisso, e eu acho que essa fonte de enegia não pode ser prática a não ser se o Universo e o para-Universo 
+	  trabalhem juntos, cada um com uma metade da bomba, empurrando energia deles para nós, e de nós para eles, tirando vantagem das diferenças nas leis naturais dos dois Universos.”
+	  
+	  Existe uma tendência nos registros oficiais de dar a impressão que a teoria de Hallam foi aceita de imediato, contagiando todos, mas não foi isso que ocorreu. Kantrowitsch foi um dos que se 
+	  omitiu, e isso foi crucial para a carreira de Hallam. 
+	  
+	  Hallam sozinho mal podia compreender totalmente as implicações práticas e teóricas de sua própria sugestão. Uma equipe se reuniu, mas 
+	  ninguém se associava abertamente com a sugestão. No momento em que o sucesso era eminente, o público havia se acostumado a pensar como sucesso de Hallam, e de Hallam apenas. Para o público, foi Hallam, e Hallam sozinho, que primeiro descobriu a substância, concebeu e transmitiu A Grande Descoberta, e por isso Hallam era o Pai da Bomba de Elétrons.
+	  
+	  Em vários laboratórios, pastilhas de tungstênio foram oferecidas. Uma a cada dez eram transferidas, e novos suprimentos de plutônio-186 foram produzidos. Outros elementos foram oferecidos como isca, mas eram rejeitados.
+	  
+	  Novamente, foi Hallam quem apresentou alguns aspectos da teoria com maior sucesso, chegando ao ponto do público só aceitar informação vinda de Hallam. Em um de seus artigos mais famosos, ele sugere que a força forte do para-Universo é mais forte que a força forte no nosso Universo. Isso significa que os prótons são mantidos juntos contra sua repulsão eletrostática mais fácilmente, e o núcleo necessita de menos neutrôns para gerar estabilidade. No nosso Universo, plutônio-186 começa a radiar pósitrons, liberando energia enquanto faz isso, e a cada pósitron emitido, um próton no núcleo é convertido em neutrôn. Eventualmente, 20 prótons no núcleo se tornam neutrôns, e plutônio-186 vira tungstênio-186. No final, a cada plutônio-186 recebido, nosso Universo termina com 20 elétrons a menos.
+	  
+	  Enquanto isso, tungstênio-186 entra o para-Universo, e pelas suas leis naturais, ele possui neutrôns demais, ou prótons de menos. O núcleo do tungstênio-186 passa a emitir elétrons, liberando energia enquanto faz isso, e a cada elétron emitido, um neutrôn vira um próton, até que, no final, o tungstênio-186 vira plutônio-186 de novo. A cada tungstênio-186 enviado para o para-Universo, 20 elétrons a mais são adicionados ao para-Universo. O plutônio/tungstênio pode fazer esse ciclo para sempre, indo e voltando entre o Universo e para-Universo, liberando energia no primeiro e depois no outro, o efeito resultante sendo 20 elétrons do nosso Universo sendo enviados para o para-Universo, para cada núcleo que faz o ciclo. 
+
+	\subsection{Capítulo 3}
+	  
+	  O capítulo 3 começa contando sobre a primeira entrevista de Lamont com Hallam, 
+	  em uma época em que Lamont ainda idolatrava Hallam. Hallam parecia amigável, 
+	  e em 30 anos de carreira, era muito estimado publicamente. Ele reconhece o trabalho 
+	  de Lamont em para-teoria, principalmente seu artigo sobre para-fusão. Hallam faz um 
+	  comentários mostrando humildade quanto a sua formação de radioquímico, e não de físico, 
+	  quando pede para Lamont explicar brevemente seu artigo. Hallam também reconhece que 
+	  Lamont está escrevendo um livro sobre a história da Bomba de Elétrons. Lamont pede ajuda 
+	  com alguns detalhes para Hallam, que prontamente aceita ajudar. O livro cita, então, que 
+	  essa foi a última vez que Hallam sorriu na presença de Lamont. Quando Lamont toca no ponto 
+	  da velocidade de desenvolvimento do projeto, uma vez que ele começou, ele sugere que a maior 
+	  parte do trabalho foi feita pelos para-homens. Nesse momento, o sorriso desapareceu do 
+	  rosto de Hallam, permanentemente, e ele refuta a sugestão de Lamont que os para-homens 
+	  guiaram o desenvolvimento da Bomba, dizendo que os humanos fizeram . Lamont então, argumenta 
+	  que os para-homens são mais inteligentes os humanos, e que eles fizeram o verdadeiro trabalho, 
+	  afinal, eles descobriram os humanos e iniciaram a transferência. Hallam então explode, dizendo 
+	  que ele não aceitaria ver o trabalho dos humanos diminuido, e os para-homens elevados a posto 
+	  de deuses. Hallam também diz que se o livro de Lamont vai seguir por esse caminho, ele não 
+	  publicaria o livro apartir de sua instituição, e se ele pudesse, de nenhuma outra. Uma semana 
+	  depois, as fontes históricas de Lamont pareciam secar, os que contribuiam com seu trabalho antes 
+	  pareciam não se lembrar mais dos fatos, ou não tinham mais tempo para fazerem entrevistas. 
+	  Lamont estava irritado, mas lentamente essa irritação virou raiva. O resultado disso foi que 
+	  Lamont viu sua carreira como para-teórico entrar em declinio, e se focou ainda mais na carreira 
+	  de historiador cientifico.
+
+
+	\subsection{Capítulo 6 (continuação)}
+
+	  Lamont relata para Bronowski a reação de Hallam quando ele sugeriu que os para-homens quem 
+	  moveram o desenvolvimento da Bomba de Elétrons. Ele diz que Bronowski tem sorte de nunca ter 
+	  trabalhado com Hallam. Bronowski responde, dizendo que Lamont as vezes não é nenhum anjo.
+
+
+	\subsection{Capitulo 4}
+
+	  Esse capitulo fala sobre como Bronowski e Lamont se conheceram, e fala do seu trabalho em 
+	  conjunto em tentar decifrar os para-simbolos, a fim de estabelescer a comunicação entre os 
+	  humanos e os para-homens.
+	
+	  O capitulo começa com uma breve descrição de Bronowski, dizendo que o seu exterior flácido 
+	  não enganava quem o conhecia, ele era inteligente, e não abandonava um problema até que ele 
+	  encontrasse a solução, ou chegasse a conclusão que não havia solução. Ele construição sua 
+	  reputação com as Inscrições Etruscas, uma lingua morta desde o primeiro século antes de 
+	  Cristo, que os Romanos apagaram da existência. Bronowski foi o primeiro a conseguir decifrar 
+	  as inscrições, com o pouco que os Romanos não destruiram, uma tarefa que muitos outros 
+	  linguistas antes dele falharam. Ele utilizou a lingua Basca como guia, um caminho que muitos 
+	  tentaram e desistiram, mas ele persistiu. Com muito trabalho, ele conseguiu criar uma relação 
+	  entre elas. As Incrições Etruscas, em si, não tinham nenhum valor prático, entretanto, a 
+	  tradução das Inscrições era um feito impressionante, e foi de grande importância para Lamont.
+	
+	  Lamont, entretanto, só ouviu falar de Bronowski, ou de seu feito, cinco anos depois, em uma 
+	  palestra na Universidade que Lamont trabalhava. O livro diz que Lamont foi a essa palestra 
+	  não pela sua importância, mas porque ele namorava uma estudante de Linguas Romanticas, que 
+	  insistiu que ele assistisse a palestra com ela. Lamont ficou fascinado com o problema de 
+	  decifrar uma lingua morta. O fator mais importante, para o interesse de Lamont no trabalho 
+	  de Bronowski, foi que a palestra aconteceu um dia depois da entrevista com Hallam. Após a 
+	  palestra, Lamont estava determinado a conversar com Bronowski. Ele estava convencido que os 
+	  pára-homens eram mais inteligentes que os humanos, e iria provar isso para Hallam.
+	
+	  Ao encontrar Bronowski, Lamont oferece a ele um novo desafio, de decifrar os para-simbolos. 
+	  Os para-simbolos foram inscrições enviadas pelos para-homens, junto com o plutônio-186, e 
+	  ninguém conseguia entender o que significavam. Em um primeiro momento, Bronowski recusa, 
+	  dizendo que os para-simbolos são um problema insolúvel, pois não há nenhuma base para 
+	  realizar tradução. Ele argumenta que as linguas humanas, menos que não existam bases para 
+	  traduzir, pode-se utilizar a lógica, pois foi um outro homem que criou aquela lingua. Tal 
+	  método não pode ser utilizado em uma lingua que foi criada por um para-homem, pois não se 
+	  sabe como eles pensam. Lamont diz que ele está errado, argumentando que a tradução é 
+	  possivel, pois os para-homens são mas inteligentes que os humanos, e eles já enviaram 
+	  instruções sobre como montar a Bomba de Elétrons, eles podem enviar matéria através do 
+	  espaço, eles podem sentir onde nós estamos. Bronowski discorda, dizendo que eles apenas tem 
+	  mais tecnologia. Lamont então argumenta que se os para-homens achassem que nós eramos tão 
+	  inteligentes quanto eles, não teriamos problema em decifrar as mensagens e desenvolver nossa 
+	  própria Bomba. Entretanto, eles enviaram instruções de como montar a Bomba. Bronowski replica,
+	  dizendo que mesmo que Lamont estivesse certo, o que ele poderia fazer? Em 20 anos de pesquisa,
+	  nenhum progresso foi obtido em decifrar os para-simbolos. Lamont então diz que o progresso 
+	  não foi feito porque Hallam o impediu. Ele defende que a capacidade de comunição dos para-
+	  homens com os humanos evidenciaria a diferença em inteligência, o que diminuiria a importância 
+	  de Hallam. Ele diz que eles podem enviar mensagens para os para-homens, algo nunca feito 
+	  antes, e tentar fazer eles cooperarem. Bronowski diz que os para-homens faria a maior parte 
+	  do trabalho, e portanto, não seria muito divertido para ele. Lamont, com raiva, diz que 
+	  teria muito crédito para ele, muito mais do que a fama que ele recebeu por decifrar as 
+	  Inscrições Etruscas, um feito que ninguém se importa. Ele diz que então que ele conseguiria 
+	  outra pessoa para ajudar, ou ele mesmo faria a tradução.
+	
+	  Dois dias depois, Bronowski aparece na sala de Lamont. Ele diz que vai sair da cidade, mas 
+	  que volta em Setembro, e que vai aceitar a posição que lhe foi oferecida na Universidade, e 
+	  que se Lamont ainda estivesse interessado, iria trabalhar no problema da tradução dos 
+	  para-simbolos. Com o tempo, eles ficaram amigos, e Lamont descobriu o que motivou Bronowski 
+	  a ajudá-lo. No dia seguinte a discussão, em um almoço com o presidente da faculdade, 
+	  Bronowski anuncia que vai aceitar o cargo oferecido na faculdade. O presidente, então, diz 
+	  que está honrado em receber o tradutor das Inscrições Itascas. Esse pequeno erro, o 
+	  presidente confundiu Etrusca com o Lago Itasca, origem do rio Mississippi, juntamente com o 
+	  comentário de Lamont sobre a fama limitada de Bronowski, fizeram Bronowski mudar de idéia.
+
+	\subsection{Capítulo 5}
+
+	  Após um ano de trabalho, os resultados foram muito poucos. Algumas mensagens foram enviadas, 
+	  outras recebidas, mas nada foi alcançado. Lamont questiona Bronowski quanto tempo vai levar 
+	  até que fique pronto. Bronowski comenta que ouve uma mudança na atitude de Lamont, que agora 
+	  estava pressionando-o.
+	
+	  Com o passar dos meses, os pedidos de Lamont por equipamento, recursos para viagens, 
+	  assistência técnica, foram todos atrasados, suas opiniões no departamento desprezadas. 
+	  O estopim foi quando Henry Garrison, um novato em relação a Lamont tanto em tempo de serviço 
+	  quanto em capacidade técnica recebeu uma promoção, de alto prestígio, que deveria ser dada a 
+	  Lamont. Nesse momento, não basta mais para Lamont provar que Hallam estava errado, ele só 
+	  pararia quando destruisse Hallam completamente. Esse sentimento só cresceu, fomentado pela 
+	  atitudes das pessoas na Usina de Bombeamento. A personalidade abrasiva de Lamont não ajudava 
+	  a trazer simpatia com Lamont. O próprio Garrison se sente envergonhado, e fala para Lamont 
+	  que ele não pode recusar a promoção, e que ele não tinha pedido por isso, veio como uma 
+	  surpresa. Ainda mais, se ele recusasse, Hallam indicaria outra pessoa para receber o prêmio, 
+	  não Lamont, e pergunta o que Lamont fez a Hallam. Lamont então diz que Hallam é uma fraude, 
+	  e que ele vai desmascará-lo. Garrison argumenta que Lamont não pode vencer, Hallam é muito 
+	  poderoso. Garrison diz que ele é o Pai da Bomba de Elétrons para 2 bilhões de pessoas, e 
+	  não há nada que possa afetar isso enquanto a Bomba de Elétrons for a chave para o paraíso 
+	  humano. E ainda acrescentou: não seja outro Denison.
+	  
+	  Lamont, de forma ríspida, mandou Garrison embora. Ele fez outro inimigo, ou pelo menos perdeu 
+	  um amigo. Entretanto, do que Garrison falou, apenas uma coisa ficou na sua mente: enquanto 
+	  a Bomba de Elétrons fosse fundamental para a humanidade, Hallam era intocável. Ele começou a 
+	  se perguntar se a Bomba de Elétrons era mesmo a chave para o paraíso, ou se havia um porém. 
+	  Lamont, como um para-teórico, sabia que esse porém já havia sido discutido. Quando A Grande 
+	  Descoberta foi anunciada, logo perguntou-se, o que aconteceria quando todos os elétrons 
+	  fossem bombeados?
+	  
+	  A resposta era simples. A uma velocidade razoável, iria demorar uma trilhão trilhão trilhão 
+	  de anos para isso acontecer. Tanto o Universo quanto o para-Universo já teriam deixado de 
+	  existir em uma fração desse tempo.
+	  
+	  Outra possibilidade era que não seria possivel bombear todos os elétrons. A cada elétron 
+	  bombeado, o Universo ganha uma carga positiva, e o para-Universo ganha uma carga negativa. 
+	  Cada ano que passa, as cargas aumentam, e se torna mais difícil bombear elétrons do Universo 
+	  para o para-Universo. Se a concentração de cargas se mantivesse constante nos pontos de 
+	  bombeamento, o processo pararia quase que de instantâneo, mas há o efeito de difusão dos 
+	  pósitrons recebidos, espalhando-os pela Terra. O aumento da carga positiva da Terra forçava 
+	  os ventos solares positivos a desviar do planeta, quando em grandes distâncias da órbita 
+	  terrestre, e a magnetosfera da Terra cresceu. Os ventos solares varrem os pósitrons da 
+	  superficie da Terra para o Sistema Solar, mantendo um equilibrio, mas a cada estação de 
+	  bombeamento criada, maior fica a carga positiva da Terra. Chegaria um momento em que a 
+	  diferença de carga dos dois Universos pararia o processo, e esse tempo demoraria uma fração 
+	  do tempo para enviar todos os elétrons, aproximadamente um trilhão trilhonésimo desse tempo. 
+	  Ainda assim, o bombeamento duraria um trilhão de anos, o que é muito tempo.
+	  
+	  Lamont então pensou em outra possibilidade, outra linha de pensamento que ele lembrou que 
+	  Hallam havia discutindo em um dos seus artigos para o público. Nesse artigo, Hallam faz um 
+	  paralelo com a força da água descendo um rio e a geração de trabalho, e então questiona, 
+	  o que aconteceria se toda a água descesse o rio? Obviamente, não seria mais possivel realizar 
+	  trabalho até que a água subisse o rio, e isso necessita de trabalho, mas trabalho que descer 
+	  o rio gera. No caso do rio, o Sol realiza o trabalho de levar a água de volta ao topo do rio.
+	  Entretanto, do ponto de vista nuclear, o Sol também trabalha “descendo o rio”. Então, o 
+	  artigo diz que tudo no nosso Universo está descendo um caminho, nós podemos forçar 
+	  temporariomente a subir o caminho, mas utilizando um outro caminho descendo gerando mais 
+	  trabalho. No nosso Universo, todos os caminhos descem em um sentido, e sobem no outro, 
+	  quando idealmente, precisamos de um caminho que desce nos dois sentidos. A Bomba de Elétrons 
+	  toma vantagem disso. Ao tomarmos um caminho que desce no sentido para-Universo – Universo, 
+	  ele também desce no sentido Universo – para-Universo. O artigo se chama: “O Caminho que 
+	  Descem nos Dois Sentidos”.
+	  
+	  Então, Lamont começa a analisar as suposições. Elas são os pontos fracos em qualquer teoria. 
+	  O que aconteceria se fossem tomadas outras suposições? Lamont começou sem pistas, mas dentro 
+	  de um mês, ele sentiu que tinha descoberto a verdade. Nesse momento, ele começou a apressar 
+	  Bronowski, até que um dia, Lamont decidiu ir falar com Hallam novamente. Quando Bronowski 
+	  perguntou o motive, Lamont disse, para que ele precisa que Hallam o rejeitasse, pois assim 
+	  ele não poderia dizer que Lamont não o procurou. Quando Lamont finalmente conseguiu a reunião 
+	  com Hallam, ele diz que não acha que a Bomba de Elétrons é um caminho que desce em ambos os 
+	  sentidos, citando o artigo de Hallam. Ele então começa a explicar sua teoria através de 
+	  equações físicas, pois sabia que dessa forma Hallam se sentiria insultado, pois não 
+	  conseguiria acompanhar as transformações matemáticas. Sua estratégia deu certo. Após Hallam 
+	  reclamar, dizendo que não entraria numa discussão complexa de para-teoria, Lamont começa 
+	  a explicar o conceito do artigo de Hallam com conceitos de Termodinâmica básica, dizendo 
+	  que em determinadas condições, aquecimento e resfriamento ocorrem de forma igualmente 
+	  espontânea. Ele então segue dizendo:
+    
+	  Na Bomba de Elétons, trabalho é obtido através do equilibro de extremos. Nesse caso, os 
+	  extremos são as leis da Física dos dois Universos. As condições que fazem essas leis 
+	  possíveis, quaisquer que elas sejam, estão vazando de um Universo para o outro, e o 
+	  resultado será que os dois Universo acabarão com leis naturais idênticas – e intermediárias 
+	  as condições que existem hoje. Isso causaria enormes mudanças em ambos os Universos, e 
+	  pede para que as Bombas sejam paradas permanentemente. Ele esperava que Hallam explodisse, 
+	  e foi isso que ele fez. Hallam disse que já sabia disso muito antes dele nascer. Lamont 
+	  foi embora, tendo conseguido o que queria, mas com raiva da forma que foi tratado.
+
+	\subsection{Capitulo 6 (concluído)}
+
+	  Após tentar falar com Hallam, Lamont toma o próximo passo: levar o caso para o senador Burt, 
+	  presidente do Comite de Tecnologia e Meio Ambiente. Nesse momento, Lamont ainda não contou 
+	  para Bronowski suas novas teorias, e Bronowski acha que ele iria apresentar as traduções 
+	  incompletas para o senador. Lamont nega, mas também não diz o assunto que irá discutir com 
+	  o senador. Bronowski diz que eles estão nisso juntos, e que não deveriam ter segredos entre 
+	  eles. Lamont então explica que a Bomba de Elétrons transfere leis naturais, e todo o processo 
+	  de equilibrio das leis naturais dos dois Universos. Ele também diz que todos os para-físicos 
+	  já sabiam disso. A diferença, é que Lamont suspeitava que o tempo que levaria para isso 
+	  acontecer é muito menor que o tempo calculado oficialmente, e que se ele estivesse certo, a
+	  humanidade correria perigo imediato. Ele diz também  que o mundo dos para-homens pode estar 
+	  correndo perigo. Bronowski questiona então porque os para-homens começaram a bombear se havia 
+	  risco. Lamont argumenta que eles podem ter começado o processo pelos beneficios, e se 
+	  preocurapem com os problemas depois, e que os beneficios do bombeamento são muito bons para 
+	  se jogar fora.
+	
+	  Bronowski então revela que ele conseguiu algum avanço. Enquanto Lamont estava conversando com 
+	  Hallam, Bronowski recebeu uma placa de ferro, com 4 simbolos, no alfabeto latino. As letras 
+	  diziam: F – E – E – R  (medo, escrito errado). Lamont rapidamente sugere que os para-homens 
+	  estão dizendo que estão com medo, mas Bronowski diz que eles não podem tirar essa conclusão. 
+	  Os para-homens podem não entender ainda bem o idioma dos humanos, e querem afirmar que não 
+	  há nada a temer. Lamont se anima para mostrar os resultados obtidos para o Senador Burt, 
+	  mas a incerteza do que os para-homens querem dizer o impede. Bronowski sugere que Lamont 
+	  busque ajuda de outros físicos, mas ninguém iria se opor a Hallam. Ainda assim, Lamont foi 
+	  atrás de Burt.
+
+	\subsection{Capitulo 7}
+
+	  Enquanto eles não conseguiam marcar o encontro com Burt, Bronowski tento enviar outras 
+	  mensagens, incorporando a palavra F-E-E-R e F-E-A-R, mas não obteve resposta. Nada 
+	  aconteceu, e Lamont agora iria encontrar Burt. Lamont pergunta para Burt se ele estava 
+	  familiarizado com a teoria que as leis naturais dos dois universos estavam se juntando. 
+	  Ele confirmou, e diz que o equilibrio acontecerá daqui a \(10^{30}\) anos. Lamont então apresenta 
+	  sua teoria de isso aconteceria muito antes. Ele explica que a teoria aceita, que diz que 
+	  o que oferece resistência a trasferência das leis naturais é a matéria, está errada, 
+	  pois o que resiste a permeação das leis naturais não é a matéria, e sim o material básico 
+	  do Universo. Ele diz que é difícil explicar o que é essa matéria básica do Universo, e 
+	  diz que ela é o que faz com que a energia tenha que ser convervada, e que a matéria básica 
+	  do para-Universo é diferente da nossa, de forma que a interação nuclear no para-Universo 
+	  seja cem vezes mais forte que no Universo. Se correta, a consequência da teoria de Lamont 
+	  é que as leis naturais do para-Universo estão se dissipando mais lentamente do que é 
+	  esperado, e portanto está se acumulando no sistema Solar. Com isso, o equilibrio entre 
+	  os dois Universos seria atingido no sistema solar muito antes do que esperado, aconteceria 
+	  em \(10^{10}\) anos. Esse não é o maior problema, pois o dano aconteceria muito antes que o 
+	  equilibrio seja atingido. Com o Bombeamento, a interação nuclear no Universo se torna cada 
+	  vez mais forte, assim como no para-Universo. Isso faria com que o Sol realizasse fusão 
+	  do hidrogênio muito mais rapidamente, e com isso, ocorreria uma enorme explosão. Lamont 
+	  explica, nas leis naturais do nosso Universo, é impossível uma estrela pequena como o Sol 
+	  virar uma supernova, mas com a alteração das leis, isso seria possível. A única forma de 
+	  impedir isso, seria parar o Bombeamento. O senador Burt revela que antes de ir encontrar 
+	  com Lamont, ele pesquisou sobre o seu passado, e conversou com Hallam. Hallam disse ao 
+	  senador que Lamont era um idiota causador de problemas, e ordenou que Burt não encontrasse 
+	  com Lamont. Burt, que normalmente iria aceitar a sugestão de Hallam, não gostou da demanda 
+	  de Hallam, pois Burt era um senador.
+	
+	  Lamont se animou, pois achou que Burt o ajudaria a para a Bomba de Elétrons. Burt disse que 
+	  isso era impossível. Burt duvida que a teoria de Lamont esteja correta, e Lamont responde 
+	  dizendo que sua teoria responde várias perguntas até hoje sem respostas. Burt pergunta 
+	  sobre os outros físicos, se a teoria de Lamont estivesse correta, eles iriam aceitá-la. 
+	  Lamont diz que os físicos não o apoiam porque eles tem interesses próprios. Burt diz que 
+	  ele não tem poder para fazer isso, que o seu poder vem do apoio do povo. E o povo não quer 
+	  que a Bomba de Elétrons pare. Burt pede uma forma de impedir que o Sol exploda, mas sem 
+	  parar o Bombeamento. Lamont diz que isso é impossível. Burt pergunta porque Lamont não 
+	  consegue o apoio de Hallam, e ele diz que Hallam é um homem fraco, que não iria admitir que 
+	  a Bomba de Elétrons destruiria a Terra. Lamont diz que ele poderia provar sua teoria através 
+	  do estudo de combinaçoes de quarks, pois estavam produzindo resultados intrigantes, e ele 
+	  conseguiria explicá-los pela sua teoria. Entretanto, para isso, ele precisaria de acesso 
+	  ao Grande Síncrotron de Prótons, que fica na Lua, mas ele não tem acesso a esse tipo de 
+	  equipamento. Burt diz que ele não pode ajudá-lo, não enquanto Hallam sabotá-lo. Burt diz 
+	  que ele não vai arriscar sua carreira para ajudar Lamont. Após Lamont deixar a sala, Burt 
+	  refletiu sobre a possibilidade de Lamont estar correto. Ele poderia arriscar reeleição por uma 
+	  boa causa, mas não arriscaria humilhação novamente.
+
+	\subsection{Capítulo 8}
+
+	  Nesse momento, Lamont achava que ele não tinha nada mais a perder. Portanto, ele foi 
+	  encontrar Joshua Chen, um revolucionário que era impopular no meio acadêmico, e todos que 
+	  entravam em contato com ele perdiam crédito. Entretanto, Chen possuia um poder criar uma 
+	  intensidade em suas causas, e ele criou uma organização que era mais fechada que muitas 
+	  organizações políticas no mundo. Quando Chen falava alguma coisa, o mundo parava para 
+	  escutar. Chen foi um dos responsáveis por acelerar o desenvolvimento da Bomba de Elétrons, 
+	  convencendo os que ainda eram favoráveis à energia nuclear.
+	  
+	  Lamont explica para Chen sua teoria sobre a Bomba de Elétrons. Chen pergunta se Lamont possui 
+	  o apoio de Hallam, e Lamont confessa que não, mas diz que ele possui evidências que os 
+	  para-Homens também querem parar, só que ele não pode divulgá-la ainda. Chen diz que ele só 
+	  pode apoiar a causa de Lamont se ele apresentar evidências satisfatórias. Lamont argumenta 
+	  que até ele conseguir provar, será tarde demais. Ele argumenta que é razoável pensar que 
+	  existam mais civilizações inteligentes em ambos os Universos. E que em algumas delas já 
+	  teriam descoberto o Bombeamento, e que já sofreram a explosão de uma estrela. Isso explicaria 
+	  os quasars, pequenos corpos brilhantes do tamanho de algumas Sistemas Solares, com a luz de 
+	  cem galaxias. Os quasars nunca foram explicados.
+	  
+	  Chen diz que não acredita no que Lamont diz, se ele não apresentar evidências. Ele diz que a 
+	  Bomba de Elétrons é boa demais para a humanidade. Chen diz que a Bomba de Elétrons não é 
+	  apenas energia limpa e gratuíta, ela faz com que a humanidade não precise mais trabalhar 
+	  para sobreviver. Isso significa, que pela primeira vez na história, a humanindade pode se 
+	  concentrar em problemas mais importantes para desenvolver seu potêncial. Ele cita então a 
+	  questão da imortalidade, uma causa que os humanos podem se concentrar. Lamont zomba dessa 
+	  idéia. Chen então diz que a Bomba de Elétrons permite que a imortalidade se torne realidade. 
+	  Lamont decide então revelar a mensagem que eles receberam dos para-homens. Entretanto, 
+	  Chen interpreta a mensagem (medo) como medo de que os humanos parem de bombear. Ele disse 
+	  que continuaria a apoiar a causa da imortalidade. Lamont perguntou então sua idade, mas 
+	  Chen não respondeu. Lamont descobriu que ele tinha sessenta anos, e o pai de Chen morreu aos 
+	  sessenta e dois.
+
+	\subsection{Capítulo 9}
+
+	  Bronowski diz que Lamont parece desanimado. Ele diz que todos só pensam em sua reputação, ou 
+	  seu lugar na história. Ele conta para Bronowski que Chen quer a imortalidade. Bronowski 
+	  pergunta o que Lamont quer, e ele responde que quer a segurança da humanidade. Bronowski 
+	  acredita nisso, mas acha que no fundo Lamont quer outra coisa. Lamont confessa que ele quer 
+	  provar para as pessoas que ele está certo, porque ele de fato está certo. Ele diz que após ter 
+	  falado com Chen, ele pensou se não agiu errado ao confrontar Hallam, ao invés de ter 
+	  persuadí-lo a apoiá-lo, embora não acreditasse que iria conseguir isso. Ele também teve uma 
+	  idéia. Se os para-homens não podem continuar a bombear sem os humanos, os humanos também não 
+	  podem bombear sem os para-homens. A forma de parar a Bomba de Elétrons é convencer os 
+	  para-homens a parar.
+	  
+	  Bronowski então da uma risada, e diz: “Pete, você é um gênio.” Ele conta então que no dia 
+	  anterior ele enviou uma mensagem, em inglês: “P-U-M-P-B-A-D”. E, naquela manhã, ele receber 
+	  uma mensagem de volta: “Y-E-S P-U-M-P B-A-D B-A-D B-A-D”. Ele pergunta a Lamont para quem 
+	  ele vai mostrar isso. Lamont diz que não vai mostrar isso para ninguém, pois só iriam falar 
+	  que ele falsificou a mensagem. Uma vez que os para-homens parem de bombear, os físicos 
+	  aceitariam a teoria de Lamont que a Bomba de Elétrons iria destruir a Terra, pois teriam 
+	  que arrumar uma explicação para a população, que estaria enfurecida com o fim da Bomba 
+	  de Elétrons. Apesar disso, Bronowski acha estranho que os para-homens não pararam a Bomba, 
+	  se eles a consideram ruim, e ele sugere que talvez aja um problema na comunicação, que 
+	  eles entendam “B-A-D” como “G-O-O-D”. Lamont diz para Bronowski continuar trabalhando, 
+	  que eventualmente eles onseguiriam se comunicar de forma clara e sem dúvidas. Então eles 
+	  falariam para os para-homens que os humanos estão dispostos a parar. (mesmo que ele não 
+	  tenha autoridade para isso, os para-homens não sabem disso). Eles seriam heróis da 
+	  humanidade, mesmo que se tornassem mártirs. Não demoraria muito agora.
+
+	\subsection{Capítulo 10}
+
+	  Duas semanas se passaram, e nenhuma nova mensagem foi recebida. Lamont recebeu uma 
+	  penalização, entretanto, o que mais o chateou foi ter o seu artigo rejeitado pela 
+	  revista Physical Reviews. Não que ele não esperase isso, mas ele esperava pelo menos 
+	  o motivo pelo qual foi rejeitado, e não foi dado nenhum motivo. Ele desabafa, e diz que 
+	  a estupidez da humanidade vai condená-la. Ele diz que Chen foi a Hallam, contando sobre 
+	  as mensagens que Lamont estava recebendo dos para-homens. Lamont é acusado de sabotar o 
+	  projeto da Bomba, por meios não professionais, o que o tornariam não-adequado para trabalhar 
+	  na Estação de Bombeamento. Lamont planeja atrasar ao máximo o julgamento, para que Bronowski 
+	  possa continuar o trabalho.
+	
+	  Entretanto, Bronowski parece desanimado. Ele pensa em desistir, e tenta convencer Lamont a 
+	  desistir. Ele conta que recebeu uma resposta na noite anterior. A mensagem era: 
+	  “PUMP NOT STOP NOT STOP WE NOT STOP PUMP WE NOT HEAR DANGER NOT HEAR NOT HEAR YOU STOP PLEASE 
+	  STOP YOU STOP SO WE STOP PLEASE YOU STOP DANGER DANGER DANGER STOP STOP YOU STOP PUMP”. 
+	  Eles parecem desesperados. Bronowski acredita que do outro lado, está um para-Lamont, que 
+	  descobriu o perigo gerado pela Bomba de Elétrons. Ele diz que se mostrassem isso para as 
+	  autoridades, apenas iriam dizer que era uma mentira, mesmo que Bronowski testemunhasse 
+	  em um tribunal a forma com que receberam a mensagem. E apenas iriam dizer que há um maluco, 
+	  no para-Universo, que é como Lamont, que essa visão não era apoiada pelas autoridades no 
+	  para-Universo. Ele diz que o problema é a estupidez, e que mesmo os para-homens, mais 
+	  inteligentes que os humanos, também são estupidos. Ele cita uma frase de Schiller: 
+	  “Against stupidity, the gods themselves contend in vain.” Bronowski diz para Lamont 
+	  desistir, pois não há nada mais a ser feito, e foi embora. Lamont estava sozinho. 
+	  Nesse momento, protons no Sol estavam se juntando, lentamente aumentando sua energia até 
+	  explodir. E ele diz, para si mesmo: “E ninguém na Terra saberá que eu estava certo”, 
+	  e piscou e piscou para conter as lágrimas.
 
     \section{...Os próprios deuses...}
 
